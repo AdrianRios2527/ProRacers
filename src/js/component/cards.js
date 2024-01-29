@@ -8,11 +8,11 @@ export const Cards = (props) => {
   };
 
   return (
-    <div className="card card1 bg-black text-white my-4" style={{ maxWidth: "20rem", width: "100%" }}>
+    <div className="card  card1 bg-black text-white my-4" style={{ maxWidth: "20rem", width: "100%" }}>
       <img className="card-img-top" style={{ width: "100%", height: "40%" }} src={props.url} alt={props.title} />
       <div className="card-body d-flex flex-column">
-        <h5 className="card-title text-center mt-2">{props.title}</h5>
-        <p className="card-text flex-grow-1 mt-2">{props.texts}</p>
+        <h5 className="card-title text-center mt-2 cardcolor">{props.title}</h5>
+        <p className="card-text flex-grow-1 mt-2 cardcolor">{props.texts}</p>
         <div className="d-flex">
           <button className="botoncompracard" onClick={sumadorCompra}>
             ${props.price}
